@@ -32,3 +32,10 @@ if (isset($_POST['name'])) {
   }
 }
 ?>
+
+<!-- Add this section to display the success message -->
+<?php
+if (isset($_GET['submitted']) && $_GET['submitted'] == 1) {
+  echo '<p style="color: green;">Form submitted successfully! Thank you for your submission.</p>';
+}
+?>
